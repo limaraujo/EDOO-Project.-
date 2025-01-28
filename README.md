@@ -1,38 +1,36 @@
-# Estrutura do Projeto
+# Project Structure
 
-Este repositório contém a implementação de um analisador sintático baseado em recursive descent parsing. A seguir, detalhamos a estrutura do projeto e suas principais componentes.
+This repository contains the implementation of an analytical parser for processing arithmetic expressions, with support for integer and boolean literals. The project uses a Context-Free Grammar (CFG) to define and interpret the format of the expressions, enabling analysis and validation according to the specification.
 
-## Estrutura de Diretórios e Arquivos
+## Directory and File Structure
 
 ```
-├── BinaryExpression.cpp   -> Implementação das classes de expressões binárias
-├── BinaryExpression.h     -> Declaração das classes de expressões binárias
-├── comandos/              -> Instruções sobre como utilizar o código
-├── Expression.h           -> Classe base para todas as expressões
-├── out/                   -> Diretório de saída
-├── in/                    -> Diretório de entrada
-├── Lexer.cpp              -> Implementação do analisador léxico
-├── Lexer.h                -> Declaração do analisador léxico
-├── LICENSE                -> Licença do projeto
-├── Literal.cpp            -> Implementação da classe para literais
-├── Literal.h              -> Declaração da classe para literais
-├── main.cpp               -> Ponto de entrada do programa
-├── Parser.cpp             -> Implementação do analisador sintático recursive descent
-├── Parser.h               -> Declaração do analisador sintático
-├── PrimaryExpression.cpp  -> Implementação das expressões primárias (ex: parênteses e unárias)
-├── PrimaryExpression.h    -> Declaração das expressões primárias
-├── Token.h                -> Definição e extração de tokens
-├── UnaryExpression.cpp    -> Implementação das expressões unárias
-└── UnaryExpression.h      -> Declaração das expressões unárias
+├── BinaryExpression.cpp   -> Implementation of binary expression classes
+├── BinaryExpression.h     -> Declaration of binary expression classes
+├── commands/              -> Instructions on how to use the code
+├── Expression.h           -> Base class for all expressions
+├── out/                   -> Output directory
+├── in/                    -> Input directory
+├── Lexer.cpp              -> Implementation of the lexical analyzer
+├── Lexer.h                -> Declaration of the lexical analyzer
+├── LICENSE                -> Project license
+├── Literal.cpp            -> Implementation of the literal class
+├── Literal.h              -> Declaration of the literal class
+├── main.cpp               -> Program entry point
+├── Parser.cpp             -> Implementation of the recursive descent parser
+├── Parser.h               -> Declaration of the recursive descent parser
+├── PrimaryExpression.cpp  -> Implementation of primary expressions (e.g., parentheses and unary)
+├── PrimaryExpression.h    -> Declaration of primary expressions
+├── Token.h                -> Token definition and extraction
+├── UnaryExpression.cpp    -> Implementation of unary expressions
+└── UnaryExpression.h      -> Declaration of unary expressions
 ```
 
-## Como Utilizar o Código
+## How to Use the Code
 
-1. **Compilação e excursão do código:**
+1. **Compile and run the code:**
 
-g++ -std=c++17 -Wall -Wextra -g3 -o main  *.cpp && ./main < in > out
-
-
-
-
+```bash
+g++ -std=c++17 -Wall -Wextra -g3 -o main *.cpp && ./main < in > out
+```
 
