@@ -1,0 +1,18 @@
+{
+  "configurations": [
+    {
+      "name": "linux-gcc-x64",
+      "includePath": [
+        "${workspaceFolder}/**",  // Pesquisa recursivamente no diretório do projeto
+        "/home/alcantara-salvador/Área de trabalho/Projeto de EDOO"  // Caminho específico para os cabeçalhos
+      ],
+      "defines": [],
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "c11",  // Defina o padrão do C, se necessário
+      "cppStandard": "c++17",  // Defina o padrão do C++, se necessário
+      "intelliSenseMode": "linux-gcc-x64",
+      "compilerArgs": []
+    }
+  ],
+  "version": 4
+}
