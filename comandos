@@ -1,0 +1,5 @@
+Para executar o código, basta rodar o comando abaixo:
+
+g++ -std=c++17 -Wall -Wextra -g3 -o main  *.cpp && ./main < in > out
+
+O arquivo de entrada é o arquivo "in" e o arquivo de saída é o arquivo "out".
